@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:v="clr-namespace:ResturantReserve.Views"
+             xmlns:vm="clr-namespace:ResturantReserve.ViewModels"
+             xmlns:m="clr-namespace:ResturantReserve.Models"
+             x:Class="ResturantReserve.Views.LoginPage"
+             x:DataType="vm:LoginPageVM">
+    
+    <VerticalStackLayout>
+        <Entry Placeholder="{x:Static m:Strings.Email}" Text="{Binding Email}" />
+        <Entry Placeholder="{x:Static m:Strings.Password}" Text="{Binding Password}" />
+        <Button Text="{x:Static m:Strings.Login}" Command="{Binding LoginCommand}"/>
+    </VerticalStackLayout>
+</ContentPage>
